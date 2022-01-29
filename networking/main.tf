@@ -39,9 +39,9 @@ resource "aws_internet_gateway" "internet_gateway" {
   tags = {
     Name = "igw"
   }
-  lifecycle {
+  /* lifecycle {
     create_before_destroy = true
-  }
+  } */
 }
 
 resource "aws_route_table" "public_rt" {
